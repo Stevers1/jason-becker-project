@@ -6,7 +6,7 @@ body {
   color: white;
   padding: 0;
   margin: 0;
-  background-image:url("./background-img.jpg");
+  background-image:url("../assets/background-img.jpg");
   background-attachment: fixed;
   background-size:contain;
 }
@@ -16,6 +16,13 @@ nav {
   text-decoration: none;
   position: sticky;
   top: 0;
+}
+
+.ulist {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
 }
 
 li,
