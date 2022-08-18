@@ -157,3 +157,26 @@ hr.solid {
   padding: 20px;
   text-align: unset;
 }
+
+.section-songs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-songs__img {
+  width: 640px;
+  border: 10px solid white;
+  margin-bottom: 100px;
+}
+
+.songs-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-songs__p {
+  width: 850px;
+ margin-bottom: 50px;
+}
