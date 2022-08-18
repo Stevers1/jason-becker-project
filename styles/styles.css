@@ -204,3 +204,7 @@ hr.solid {
 .colab__cards__card {
   max-width: 400px;
 }
+
+.section-colab__p {
+  width: 700px;
+}
