@@ -135,6 +135,8 @@ form {
 
 .bio-flex__pbio {
   max-width: 800px;
+  margin: 8%;
+  text-align: justify;
 }
 
 .bio-card {
