@@ -75,7 +75,11 @@ a {
 
   margin-left: 20px;
   margin-right: 44px;
+  animation: mymove 5s alternate;
 }
+
+@keyframes mymove {
+  50% {transform: rotate(180deg);}}
 
 .main1 {
   text-align: center;
@@ -93,6 +97,7 @@ a {
   border: 5px solid white ;
   justify-self: center;
   margin: 0 7% 0 7%;
+  animation: mymove 5s alternate;
 }
 
 .img-header-description {
@@ -234,12 +239,18 @@ hr.solid {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+
+.section-colab__img:hover {
+  scale: 1.1;
 }
 
 .section-colab__img {
   width: 280;
   max-width: 100%;
   border: 6px solid white;
+  transition: scale .5s;
 }
 
 .section-colab__cards {
