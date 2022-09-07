@@ -278,6 +278,13 @@ hr.solid {
   justify-self: center;
 }
 
+#my-navbar {
+  background-color: #5a5a5a;
+}
+
+#my-color {
+  color:blue;
+}
 /*MEDIA QUERY*/
 
 @media (max-width: 600px) {
