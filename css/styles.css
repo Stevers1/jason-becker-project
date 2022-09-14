@@ -1,18 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+.sass-section-colab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.sass-section-colab h1 {
+  margin: 60px;
+}
+.sass-section-colab h2 {
+  text-align: center;
+}
+.sass-section-colab__p {
+  display: inline-block;
+  max-width: 1200px;
+  padding: 0 5%;
+}
+.sass-section-colab__cards {
+  margin: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.sass-colab__cards__card {
+  max-width: 400px;
+}
+.sass-colab__cards__card .sass-section-colab__img {
+  max-width: 100%;
+  border: 5px solid #f1f1f1;
+}
 
 .other-text {
   color: #5a5a5a;
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-color: black;
   color: white;
   padding: auto;
   margin: auto;
-  background-image:url("../assets/background-img.jpg");
+  background-image: url("../assets/background-img.jpg");
   background-attachment: fixed;
-  background-size:contain;
+  background-size: contain;
 }
 
 nav {
@@ -38,7 +73,7 @@ nav {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -49,7 +84,9 @@ nav {
   display: block;
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 li,
 a {
@@ -58,7 +95,7 @@ a {
 }
 
 a {
-  color: rgb(146, 197, 199);  
+  color: rgb(146, 197, 199);
 }
 
 .main-title {
@@ -72,19 +109,19 @@ a {
   margin-top: 0;
   margin-left: 30px;
   margin-bottom: 0;
-  
 }
 
 .bio-img-title {
-
   margin-left: 20px;
   margin-right: 44px;
   animation: mymove 5s alternate;
 }
 
 @keyframes mymove {
-  50% {transform: rotate(180deg);}}
-
+  50% {
+    transform: rotate(180deg);
+  }
+}
 .main1 {
   text-align: center;
   display: grid;
@@ -98,7 +135,7 @@ a {
   width: 250px;
   min-width: 75%;
   /*width: 100%;*/
-  border: 5px solid white ;
+  border: 5px solid white;
   justify-self: center;
   margin: 0 7% 0 7%;
   animation: mymove 5s alternate;
@@ -119,7 +156,7 @@ form {
   gap: 5px;
 }
 
-.bio-flex{
+.bio-flex {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -132,9 +169,8 @@ form {
   align-self: center;
   border: 10px solid black;
   border-radius: 20px;
-  margin:auto;
+  margin: auto;
 }
-
 
 .bio-pic1 {
   width: 300px;
@@ -185,7 +221,6 @@ hr.solid {
 .album-images {
   width: 200px;
   height: 200px;
-  
 }
 
 .album_cards__card {
@@ -219,7 +254,6 @@ hr.solid {
   padding: 8%;
 }
 
-
 .section-songs__img {
   max-width: 100%;
   border: 10px solid white;
@@ -243,7 +277,6 @@ hr.solid {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .section-colab__img:hover {
@@ -254,7 +287,7 @@ hr.solid {
   width: 280;
   max-width: 100%;
   border: 6px solid white;
-  transition: scale .5s;
+  transition: scale 0.5s;
 }
 
 .section-colab__cards {
@@ -287,60 +320,45 @@ hr.solid {
 }
 
 #my-color {
-  color:blue;
+  color: blue;
 }
+
 /*MEDIA QUERY*/
-
 @media (max-width: 600px) {
-
   .img-header {
-    border: 2px solid white ;
-
+    border: 2px solid white;
   }
- 
   .ulist > li {
     display: none;
   }
-
-  .ulist{
+  .ulist {
     padding: 0;
   }
-
   .ham {
     display: block;
   }
-
   .dropdown {
     position: relative;
     display: inline-block;
   }
-
   .section-colab__cards {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    
   }
-
   .album_cards__card {
-
     flex-direction: column;
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
     background-color: transparent;
   }
-
   .album-images {
     border: 10px solid black;
     border-radius: 5px;
   }
-
   .bio-card {
     flex-direction: column;
     align-items: center;
     text-align: justify;
   }
-
-}
-  
-
+}/*# sourceMappingURL=styles.css.map */
