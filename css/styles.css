@@ -9,6 +9,7 @@
 }
 .sass-section-colab h1 {
   margin: 60px;
+  font-weight: bold;
 }
 .sass-section-colab h2 {
   text-align: center;
@@ -20,6 +21,7 @@
 }
 .sass-section-colab__cards {
   margin: 100px 0;
+  padding: 0 5%;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -30,9 +32,18 @@
 .sass-colab__cards__card {
   max-width: 400px;
 }
+.sass-colab__cards__card p {
+  display: inline-block;
+  margin-top: 20px;
+  text-align: justify;
+}
 .sass-colab__cards__card .sass-section-colab__img {
   max-width: 100%;
   border: 5px solid #f1f1f1;
+  transition: 1s;
+}
+.sass-colab__cards__card .sass-section-colab__img:hover {
+  transform: scale(1.05);
 }
 
 .other-text {

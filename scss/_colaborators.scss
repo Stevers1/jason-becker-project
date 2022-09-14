@@ -8,6 +8,7 @@
 
   h1 {
     margin: 60px;
+    font-weight: bold;
   }
 
   h2 {
@@ -22,6 +23,7 @@
 
   &__cards{
     margin: 100px 0;
+    padding: 0 5%;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -35,8 +37,19 @@
 .sass-colab__cards__card {
   max-width: 400px;
 
+  p {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: justify;
+  }
+
   .sass-section-colab__img {
     max-width: 100%;
     border: 5px solid $text-color;
+    transition: 1s;
+
+    &:hover {
+      transform:scale(1.05);
+    }
   }
 }
