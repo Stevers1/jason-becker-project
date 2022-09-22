@@ -10,7 +10,7 @@
 body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: black;
-  color: white;
+  color: map-get($color, warning);
   padding: auto;
   margin: auto;
   background-image:url("../assets/background-img.jpg");
